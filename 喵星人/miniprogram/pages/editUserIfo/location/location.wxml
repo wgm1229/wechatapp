@@ -1,0 +1,2 @@
+<!--miniprogram/pages/editUserIfo/location/location.wxml-->
+开启位置共享<switch checked="{{isLocation}}" bindchange="switchChange"/>

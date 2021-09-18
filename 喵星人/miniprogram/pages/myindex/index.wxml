@@ -1,0 +1,38 @@
+<!--miniprogram/pages/myindex/index.wxml-->
+<text wx:if="{{textVisible}}">{{string}}</text>
+<view wx:for="{{textData}}" wx:key="index" wx:for-index="idx" wx:for-item="itemName">
+  {{idx}}:{{itemName.id}}:{{itemName.name}} 
+</view>
+<!-- <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:key="unique" wx:for-item="i">
+  <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:key="unique" wx:for-item="j">
+    <view wx:if="{{i<=j}}">
+    {{i}}*{{j}}={{i*j}}
+    </view>
+  </view>
+</view> -->
+<!-- <view wx:for="array" wx:key="unique">{{item}}</view>
+<view wx:for="{{string}} " wx:key="unique">{{item}}</view> -->
+<!-- <block wx:if="{{textVisible}}">
+<view wx:if="{{length>5}}">长度大于5</view>
+<view wx:elif="{{length>2}}">长度大于2</view>
+<view wx:else>长度小于等于2</view>
+</block> -->
+<template name="msgItem">
+  <view>
+    <text>{{index}}:{{msg}}</text>
+    <text>Time:{{time}}</text>
+  </view>
+</template>
+<template is="msgItem" data="{{...item}}"></template>
+<template name="odd">
+  <view>odd</view>
+</template>
+<template name="even">
+  <view>even</view>
+</template>
+<view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:key="unique">
+  <template is="{{item%2===0?'odd':'even'}}"></template>
+</view>
+<!-- <import src="./item.wxml"></import>
+<template is="item" data="{{text:'forbar'}}"></template> -->
+<include src="./item.wxml" />

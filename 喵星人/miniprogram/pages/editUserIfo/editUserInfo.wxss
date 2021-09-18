@@ -1,0 +1,16 @@
+/* miniprogram/pages/editUserIfo/editUserInfo.wxss */
+.list-item{
+  height: 70rpx;
+  padding:0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #ccc;
+}
+.firstList{
+  margin-top: 20rpx;
+}
+.red{
+  font-size: 14px;
+  color: red
+}

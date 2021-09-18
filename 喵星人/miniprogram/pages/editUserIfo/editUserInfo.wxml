@@ -1,0 +1,41 @@
+<!--miniprogram/pages/editUserIfo/editUserInfo.wxml-->
+<view class="editUserIfo">
+  <navigator open-type="navigate" url="./userPhoto/userPhoto">
+    <view class="list-item firstList">
+      <text>修改头像</text>
+      <text class="iconfont icon-youjiantou"></text>
+    </view>
+  </navigator>
+  <navigator open-type="navigate" url="./name/name">
+    <view class="list-item">
+      <text>修改昵称</text>
+      <text class="iconfont icon-youjiantou"></text>
+    </view>
+  </navigator>
+  <navigator open-type="navigate" url="./signature/signature">
+    <view class="list-item">
+      <text>修改个性签名</text>
+      <text class="iconfont icon-youjiantou"></text>
+    </view>
+  </navigator>
+  <navigator open-type="navigate" url="./location/location">
+    <view class="list-item">
+      <text>共享位置</text>
+      <text class="iconfont icon-youjiantou"></text>
+    </view>
+  </navigator>
+  <navigator open-type="navigate" url="./phone/phone">
+    <view class="list-item">
+      <text>设置手机号</text>
+      <text class="red">仅好友可见</text>
+      <text class="iconfont icon-youjiantou"></text>
+    </view>
+  </navigator>
+  <navigator open-type="navigate" url="./weixin/weixin">
+    <view class="list-item">
+      <text>设置微信号</text>
+      <text class="red">仅好友可见</text>
+      <text class="iconfont icon-youjiantou"></text>
+    </view>
+  </navigator>
+</view>

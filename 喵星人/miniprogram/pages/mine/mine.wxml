@@ -1,0 +1,28 @@
+<!--miniprogram/pages/mine/mine.wxml-->
+<view class="users">
+
+  <view class="user-top">
+    <image src="{{userImage}}"></image>
+    <text wx:if="{{logined}}">欢迎你：{{nickName}}</text>
+    <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 微信授权 </button>
+  </view>
+  <navigator open-type="navigate" url="/pages/editUserIfo/editUserInfo">
+    <view class="user-list-item">
+      <text>编辑个人信息</text>
+      <text class="iconfont icon-youjiantou"></text>
+    </view>
+  </navigator>
+  <navigator open-type="navigate" url="/pages/friendList/friendList">
+    <view class="user-list-item">
+      <text>查看好友列表</text>
+      <text class="iconfont icon-youjiantou"></text>
+    </view>
+  </navigator>
+  <navigator open-type="navigate" url="/pages/detail/detail">
+    <view class="user-list-item">
+      <text>个人主页</text>
+      <text class="iconfont icon-youjiantou"></text>
+    </view>
+  </navigator>
+
+</view>

@@ -1,0 +1,5 @@
+<!--miniprogram/pages/editUserIfo/phone/phone.wxml-->
+<view>
+  <button bindtap="handleBtn">设置手机号</button>
+  <input auto-focus type="number" placeholder="请输入手机号" value="{{phoneNumber}}"  bindinput="handleText" />
+</view>

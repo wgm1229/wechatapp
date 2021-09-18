@@ -1,0 +1,44 @@
+/* miniprogram/pages/index/index.wxss */
+.index{
+  padding: 10rpx;
+}
+.index-swiper,.swiper-item,.swiper-item image,.index-tab{
+  width: 100%;
+}
+.index-swiper{
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.index-tab{
+  display: flex;
+  margin-top: 10rpx;
+}
+.index-tab text{
+  flex: 1;
+  text-align: center;
+}
+.index-tab text.active{
+  color: red;
+  border-bottom: 2rpx red solid;
+}
+.blog-list{
+  display: flex;
+  flex-wrap: wrap; 
+}
+.blog-list-item{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.blog-list-item image{
+  width: 95%;
+  height: 300rpx;
+  margin: 0 auto;
+}
+.list-textBox{
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  color: hotpink;
+}

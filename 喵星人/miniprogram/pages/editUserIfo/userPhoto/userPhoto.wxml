@@ -1,0 +1,6 @@
+<!--miniprogram/pages/editUserIfo/userPhoto/userPhoto.wxml-->
+<view>
+  <button open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 使用微信头像 </button>
+  <button bindtap="handleBtn">自定义头像</button>
+  <image src="{{userPhoto}}" bindtap="handleUploadImage"></image>
+</view>

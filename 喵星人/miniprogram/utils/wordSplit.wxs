@@ -1,0 +1,9 @@
+var wordSplit = function(word){
+  if(word.length > 4){
+    return word.substring(0,4)+'...'
+  }else{
+    return word
+  }
+}
+//抛出方法
+module.exports.wordSplit = wordSplit

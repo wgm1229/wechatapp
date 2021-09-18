@@ -1,0 +1,6 @@
+/* miniprogram/pages/editUserIfo/userPhoto/userPhoto.wxss */
+image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}

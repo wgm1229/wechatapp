@@ -1,0 +1,24 @@
+/* miniprogram/pages/mine/mine.wxss */
+.user-top{
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+}
+.user-top image{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 10rpx;
+  border-radius: 50%;
+}
+.user-top button{
+  margin: 0!important;
+}
+.user-list-item{
+  height: 70rpx;
+  /* width: 100%; */
+  padding:0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #ccc;
+}

@@ -1,0 +1,5 @@
+<!--miniprogram/pages/editUserIfo/weixin/weixin.wxml-->
+<view>
+  <button bindtap="handleBtn">设置微信号</button>
+  <input auto-focus placeholder="请输入文本" value="{{wxNumber}}"  bindinput="handleText" />
+</view>

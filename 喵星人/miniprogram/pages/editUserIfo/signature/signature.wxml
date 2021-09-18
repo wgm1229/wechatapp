@@ -1,0 +1,5 @@
+<!--miniprogram/pages/editUserIfo/signature/signature.wxml-->
+<view>
+  <button bindtap="handleBtn">设置个性签名</button>
+  <input auto-focus placeholder="请输入文本" value="{{signature}}"  bindinput="handleText" />
+</view>
