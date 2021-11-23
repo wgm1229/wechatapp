@@ -15,7 +15,8 @@ App({
     }
 
     this.globalData = {name:'cindy'}
-    
+    this.userInfo={}
+    this.userMessage={}
     // console.log('onlaunch',this)//this指向app实例对象
   },
   // Data: 'I am global data',

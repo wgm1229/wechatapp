@@ -1,54 +1,60 @@
 {
-  "setting": {},
-  "condition": {
-    "plugin": {
-      "list": []
-    },
-    "game": {
-      "list": []
-    },
-    "gamePlugin": {
-      "list": []
-    },
-    "miniprogram": {
-      "list": [
-        {
-          "id": -1,
-          "name": "db guide",
-          "pathName": "pages/databaseGuide/databaseGuide",
-          "query": ""
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
         },
-        {
-          "name": "pages/index/index",
-          "pathName": "pages/index/index",
-          "query": "",
-          "scene": null,
-          "partialCompile": {
-            "enabled": false,
-            "pages": [
-              "pages/mine/mine"
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "id": -1,
+                    "name": "db guide",
+                    "pathName": "pages/databaseGuide/databaseGuide",
+                    "query": ""
+                },
+                {
+                    "name": "pages/index/index",
+                    "pathName": "pages/index/index",
+                    "query": "",
+                    "scene": null,
+                    "partialCompile": {
+                        "enabled": false,
+                        "pages": [
+                            "pages/mine/mine"
+                        ]
+                    }
+                },
+                {
+                    "name": "pages/mine/mine",
+                    "pathName": "pages/mine/mine",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "编辑个人信息",
+                    "pathName": "pages/editUserIfo/editUserInfo",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/detail/detail",
+                    "pathName": "pages/detail/detail",
+                    "query": "userId=b00064a760e81a3d2629537c67c34525",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/message/message",
+                    "query": "",
+                    "scene": null
+                }
             ]
-          }
-        },
-        {
-          "name": "pages/mine/mine",
-          "pathName": "pages/mine/mine",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "编辑个人信息",
-          "pathName": "pages/editUserIfo/editUserInfo",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/detail/detail",
-          "pathName": "pages/detail/detail",
-          "query": "userId=b00064a760e81a3d2629537c67c34525",
-          "scene": null
         }
-      ]
     }
-  }
 }

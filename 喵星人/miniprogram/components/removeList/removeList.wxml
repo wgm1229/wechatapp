@@ -1,0 +1,6 @@
+<!--components/removeList/removeList.wxml-->
+<movable-area class="area">
+    <movable-view class="view" direction="horizontal">小妹妹</movable-view>
+    <image></image>
+    <view class="delate">删除</view>
+</movable-area>

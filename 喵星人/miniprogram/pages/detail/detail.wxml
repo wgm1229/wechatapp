@@ -1,7 +1,7 @@
 <!--miniprogram/pages/detail/detail.wxml-->
 <view class="detail">
   <button wx:if="{{isFriend}}">已是好友</button>
-  <button wx:else>添加好友</button>
+  <button wx:else bindtap="handleAddFriend">添加好友</button>
   <view>
     <text>昵称：</text>
     <text>{{detail.nickName}}</text>

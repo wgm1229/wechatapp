@@ -1,4 +1,5 @@
 // miniprogram/pages/detail/detail.js
+const app = getApp()
 const db = wx.cloud.database()
 Page({
 
@@ -70,5 +71,44 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  handleAddFriend(){
+    debugger
+    if(app.userInfo){
+      //已登陆
+      // 根据userId建数据
+      db.collection('message').where({
+        userId:this.data.detail._id
+      }).get().then((res)=>{
+        if(res.data.length){//更新
+
+        }else{//添加
+          db.collection('message').add({
+            data:{
+              userId:this.data.detail._id,
+              list:[ app.userInfo._id]
+            }
+          }).then(res=>{
+            wx.showToast({
+              title: '申请成功',
+            })
+          })
+        }
+      })
+    }else{
+      //未登录
+      wx.showToast({
+        title: '请先登录',
+        duration:2000,//停留时间
+        icon:'none',
+        success:()=>{
+         setTimeout(()=>{
+           wx.switchTab({//tabBar路径跳转方式
+             url: '/pages/mine/mine',
+           },2000)
+         })
+        }
+      })
+    }
   }
 })
