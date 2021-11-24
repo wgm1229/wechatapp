@@ -14,11 +14,22 @@ exports.main = async (event, context) => {
     if(typeof event.data == 'string' ){
       event.data = eval('('+event.data+')')//若data为字符串，解析字符,并重新赋值
     }
-    return await db.collection(event.collection).doc(event.doc).update({
-      data: {
-        ...event.data
-      },
-    })
+    if(event.doc){
+      return await db.collection(event.collection).doc(event.doc).update({
+        data: {
+          ...event.data
+        },
+      })
+    }else {
+      return await db.collection(event.collection).where({
+          ...event.where
+        })
+        .update({
+          data: {
+            ...event.data
+          },
+        })
+    }
    /*  .then(res=>{有这段会使调用云函数返回结果为null
       console.log('更新数据库',res)
     }) */

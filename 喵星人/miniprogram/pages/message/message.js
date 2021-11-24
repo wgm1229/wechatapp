@@ -82,5 +82,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onMyEvent(ev){//子组件调用此方法
+    this.setData({
+      userMessage:ev.detail//更新用户消息list
+    })
   }
 })
