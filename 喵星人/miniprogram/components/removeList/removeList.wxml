@@ -1,6 +1,6 @@
 <!--components/removeList/removeList.wxml-->
 <movable-area class="area">
-    <movable-view class="view" direction="horizontal">{{userMessage.nickName}}</movable-view>
+    <movable-view class="view" direction="horizontal" bindtap="handleAddFriend">{{userMessage.nickName}}</movable-view>
     <navigator url="{{'/pages/detail/detail?userId='+userMessage._id}}">
         <image src="{{userMessage.userPhoto}}"></image>
     </navigator>

@@ -112,7 +112,8 @@ Page({
           wxNumber:'',
           links:0,
           time:new Date(),
-          location:true
+          location:true,
+          friendList:[]
         }
       }).then(res=>{//与Promise用法相同，成功后返回结果
         console.log(res)
