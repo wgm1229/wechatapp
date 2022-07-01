@@ -49,7 +49,7 @@
                     "scene": null
                 },
                 {
-                    "name": "",
+                    "name": "pages/message/message",
                     "pathName": "pages/message/message",
                     "query": "",
                     "scene": null
